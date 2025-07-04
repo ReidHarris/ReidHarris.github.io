@@ -52,7 +52,7 @@ a:link, a:hover, a:visited, a:visited:hover
 /*  Gives links a gray background when they're hovered over.  */
 a:hover, a:visited:hover
 {
-  background-color: white;
+  background-color: transparent;
 }
 
 
@@ -128,11 +128,46 @@ div.subsection
 
 
 
+
+h1 {
+    margin: 6px 0; /* Provides some space between the h1 and the browser window, and the h1 and the first hr. */
+    font-size: 18pt; /* Makes the font size of the h1 element more reasonable. */
+    color: #007733;
+    background-color: #bbffdd;
+    padding-left: 10pt;
+    padding-right: 9pt;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 18pt;
+}
+
+#h1-title {
+    margin: 6px 0; /* Provides some space between the h1 and the browser window, and the h1 and the first hr. */
+    font-size: 30pt; /* Makes the font size of the h1 element more reasonable. */
+    color: #007700;
+    background-color: #ccffcc; /* dark green */
+    padding-left: 20pt;
+    padding-right: 20pt;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 30pt;
+}
+
+
 /*  Makes the font size of h2 elements more reasonable.  */
 /*  (I'm using h2 elements as section headings.)         */
+
 h2
 {
-  font-size: 11pt;
+  font-size: 14pt;
+  color: #007777;
+  background-color: #ccffff;
+  font-weight: bold;
+  padding-left: 10pt;
+  padding-right: 10pt;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 11pt;
 }
 
 
@@ -142,9 +177,16 @@ h2
 h3
 {
   font-size: 11pt;
-  font-weight: normal;
-  font-style: italic;
+  font-weight: bold;
+  padding-left: 7pt;
+  padding-right: 7pt;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #003377;
+  background-color: #bbddff;
+  border-radius: 11pt;
 }
+
 
 
 
@@ -222,13 +264,9 @@ body
 
 header
 {
-  position: absolute; /* These lines position the header against the upper left of the html element */
+  position: center; /* These lines position the header against the upper left of the html element */
   left: 0;            /* because that is its closest ancestor that is positioned relatively.        */
   top: 0;             /*                                                                            */
-
-  width: 100%;        /* Makes the width of the header equal to the maximum of the width of the browser */
-  min-width: 800px;   /* window, and 800px. Thus, when the browser window shrinks below 800px wide, the */
-                      /* header (and its contents) will "lock in place".                                */
   
   text-align: center; /* The h1 is a block element, so it fills the width of its parent (namely, the */
                       /* header element). This will center the content of the h1 within the h1's     */
@@ -239,12 +277,6 @@ header
 
 
 
-h1
-{
-  margin: 6px 0;   /* Provides some space between the h1 and the browser window, and the h1 and the first hr. */
-  font-size: 18pt; /* Makes the font size of the h1 element more reasonable. */
-  color: black;
-}
 
 
 
@@ -371,6 +403,7 @@ footer img
 /*==================================*/
 /*=           Menus                =*/
 /*==================================*/
+
 
 
 /*==================================*/
